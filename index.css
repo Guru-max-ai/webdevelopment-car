@@ -1,0 +1,244 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fff700;
+    color:#fa0505;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:100;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(16, 13, 13, 0.6);
+    backdrop-filter:blur(10px);
+}
+
+nav h2{
+    color:#ff9800;
+    font-size:2rem;
+}
+
+nav ul{
+    display:flex;
+    gap:30px;
+    list-style:none;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ff9800;
+}
+
+#home{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+    background:linear-gradient(
+        rgba(22, 19, 19, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ),
+    url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1600");
+    background-size:cover;
+    background-position:center;
+}
+
+#home h1{
+    font-size:4rem;
+    color:#fff;
+    margin-bottom:10px;
+    text-transform:uppercase;
+}
+
+#home p{
+    color:#ddd;
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+#home form{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+}
+
+#home input{
+    padding:15px;
+    border:none;
+    border-radius:8px;
+    width:220px;
+}
+
+#home button{
+    padding:15px 30px;
+    border:none;
+    border-radius:8px;
+    background:#ff9800;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#home button:hover{
+    background:#ff0202;
+    transform:translateY(-3px);
+}
+
+#home img{
+    width:80%;
+    max-width:900px;
+    margin-top:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(154, 0, 0, 0.3);
+}
+c
+#cars{
+    padding:80px 8%;
+}
+
+#cars h2{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:2.5rem;
+    color:#ff9800;
+}
+
+#cars{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+
+.car-card{
+    width:320px;
+    background:#1e293b;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+    box-shadow:0 5px 15px rgba(0,0,0,.4);
+}
+
+.car-card:hover{
+    transform:translateY(10px);
+    box-shadow:0 15px 35px rgba(255, 0, 0, 0.3);
+}
+
+.car-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.car-card h3{
+    padding:15px;
+    color:#ff9800;
+}
+
+.car-card p{
+    padding:0 15px 20px;
+    color:#ccc;
+}
+
+section{
+    padding:80px 8%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#ff9800;
+}
+
+section p{
+    text-align:center;
+    max-width:700px;
+    margin:auto;
+    color:#ddd;
+    line-height:1.8;
+}
+
+#contact{
+    background:#111827;
+}
+
+#contact form{
+    margin-top:30px;
+    text-align:center;
+}
+
+#contact input{
+    width:300px;
+    padding:15px;
+    border:none;
+    border-radius:8px;
+}
+
+#contact button{
+    padding:15px 25px;
+    border:none;
+    border-radius:8px;
+    background:#ff9800;
+    color:white;
+    cursor:pointer;
+}
+
+#contact button:hover{
+    background:#ffb733;
+}
+
+footer{
+    background:black;
+    padding:25px;
+    text-align:center;
+    color:#999;
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    #home h1{
+        font-size:2.5rem;
+    }
+
+    #home input,
+    #home button{
+        width:100%;
+        max-width:350px;
+    }
+
+    .car-card{
+        width:100%;
+        max-width:350px;
+    }
+}
